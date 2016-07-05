@@ -28,6 +28,7 @@ Prinicpal Component Analysis
 model <- princomp(~.,iihs_data[1:75,3:8], na.action=na.omit)
 summary(model)
 ```
+![scree1](https://cloud.githubusercontent.com/assets/20265164/16571588/d33c42ca-41fa-11e6-8345-c1004572bfa5.JPG)
 
 The summary() results describe the importance of the components. The first row describes the standard deviation for each of the components. As you can see, Component 1 has a standard deviation of 46 points, the largest spread from its mean value compared to the remaining components. The standard deviation dramatically decreases to Component 2 and then steadily declines among the remaining components. The cumulative proportion row indicates that Component 1 and Component 2 accounts for more than 88% of the variance of the data. 
 
